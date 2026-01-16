@@ -1,73 +1,135 @@
-# Welcome to your Lovable project
+# Intelligent Healthcare System 🏥
 
-## Project info
+## 📌 Project Overview
 
-**URL**: https://lovable.dev/projects/827584b4-e954-4792-931e-8db2e942b6da
+The **Intelligent Healthcare System** is an AI-assisted, web-based healthcare platform designed to improve patient–doctor interaction and provide preliminary health insights using modern web technologies and generative AI.
 
-## How can I edit this code?
+The system enables patients to analyze symptoms, book appointments, and consult doctors remotely, while ensuring secure data handling through role-based access control and authentication.
 
-There are several ways of editing your application.
+This project is built with a **TypeScript-first, industry-oriented stack** and focuses on real-world usability rather than training custom machine learning models.
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/827584b4-e954-4792-931e-8db2e942b6da) and start prompting.
+## 🚀 Features
 
-Changes made via Lovable will be committed automatically to this repo.
+* **AI-Based Symptom Analysis**
+  Uses generative AI to analyze patient-entered symptoms and provide possible conditions, severity level, and recommended specialist.
 
-**Use your preferred IDE**
+* **Health Metrics Tracking**
+  Allows users to track and monitor key health metrics over time, supporting better health awareness and follow-up analysis.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+* **Secure Medical Document Upload with Hash Verification**
+  Patients can upload medical documents, which are protected using cryptographic hash verification to ensure data integrity and prevent tampering.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+* **Role-Based Access Control (RBAC)**
+  Secure access separation for Patients, Doctors, and Admins.
 
-Follow these steps:
+* **Appointment Booking & Management**
+  Patients can book appointments; doctors can manage schedules efficiently.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+* **Remote Consultation Support**
+  Enables online consultations, reducing the need for physical hospital visits.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+* **Video Consultation Service**
+  Supports real-time video consultations between patients and doctors for face-to-face remote healthcare.
 
-# Step 3: Install the necessary dependencies.
-npm i
+* **Real-Time Communication**
+  Supports real-time updates and interactions using WebSockets.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+* **Secure Authentication & Data Handling**
+  Protects sensitive healthcare data using authenticated APIs and environment-based configuration.
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🛠️ Tech Stack
 
-**Use GitHub Codespaces**
+### Frontend
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+* **TypeScript**
+* **React 18** (Vite-powered)
+* **Vite**
+* **Tailwind CSS**
+* **shadcn/ui** & **Radix UI**
+* **React Router DOM**
+* **React Hook Form + Zod**
+* **Framer Motion**
+* **Recharts**
 
-## What technologies are used for this project?
+### Backend & Real-Time
 
-This project is built with:
+* **Node.js**
+* **Express.js**
+* **Socket.IO**
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Database & Authentication
 
-## How can I deploy this project?
+* **Supabase** (Auth, Database, Storage)
 
-Simply open [Lovable](https://lovable.dev/projects/827584b4-e954-4792-931e-8db2e942b6da) and click on Share -> Publish.
+### AI Integration
 
-## Can I connect a custom domain to my Lovable project?
+* **Google Gemini API** (Generative AI for symptom analysis)
 
-Yes, you can!
+### State & Tooling
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+* **TanStack React Query**
+* **ESLint**
+* **PostCSS & Autoprefixer**
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+---
+
+## ⚙️ How to Run the Project
+
+### Prerequisites
+
+* Node.js (v16+)
+* npm or yarn
+* Supabase account
+* Google Gemini API key
+
+### Installation Steps
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/Enjajyothika/intellihealthcare-system.git
+   cd intellihealthcare-system
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Create a `.env` file** in the project root
+
+   ```env
+   VITE_SUPABASE_PROJECT_ID=your_supabase_project_id
+   VITE_SUPABASE_PUBLISHABLE_KEY=your_supabase_anon_key
+   VITE_SUPABASE_URL=https://your-project-id.supabase.co
+
+   VITE_GEMINI_API_KEY=your_gemini_api_key
+   VITE_OPENAI_API_KEY=your_openai_api_key
+   ```
+
+4. **Run the development server**
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and visit:
+
+   ```
+   http://localhost:5173
+   ```
+
+---
+
+## 🎯 Use Cases
+
+* Preliminary health assessment and guidance
+* Continuous health metric monitoring
+* Secure storage and verification of medical records
+* Remote healthcare access through chat and **video consultations**
+* Digital appointment scheduling
