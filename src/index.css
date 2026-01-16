@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Medical theme - Professional blues and whites */
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    /* Primary - Medical blue */
+    --primary: 210 90% 48%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 210 90% 60%;
+
+    /* Secondary - Clean slate */
+    --secondary: 210 15% 95%;
+    --secondary-foreground: 215 25% 15%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 15% 40%;
+
+    /* Accent - Trustworthy teal */
+    --accent: 180 65% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Success - Medical green */
+    --success: 145 65% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --border: 210 20% 90%;
+    --input: 210 20% 94%;
+    --ring: 210 90% 48%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(210 90% 48%), hsl(210 90% 60%));
+    --gradient-subtle: linear-gradient(180deg, hsl(210 20% 98%), hsl(210 15% 95%));
+    --gradient-hero: linear-gradient(135deg, hsl(210 90% 48%), hsl(180 65% 45%));
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(210 20% 15% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(210 20% 15% / 0.08);
+    --shadow-lg: 0 10px 25px -5px hsl(210 20% 15% / 0.1);
+    --shadow-glow: 0 0 20px hsl(210 90% 48% / 0.2);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

@@ -1,0 +1,7 @@
+project_id = "knjomaesrxauihyiwvtz"
+
+[functions.analyze-symptoms]
+verify_jwt = false
+
+[functions.chat]
+verify_jwt = false
