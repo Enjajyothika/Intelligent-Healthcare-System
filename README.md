@@ -91,8 +91,8 @@ This project is built with a **TypeScript-first, industry-oriented stack** and f
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/Enjajyothika/intellihealthcare-system.git
-   cd intellihealthcare-system
+   git clone https://github.com/Enjajyothika/Intelligent-Healthcare-System.git
+   cd Intelligent-Healthcare-System
    ```
 
 2. **Install dependencies**
